@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel='stylesheet' type='text/css' href='static/stats.css'></link>
+    <script language='javascript' src='static/jquery-1.11.1.min.js'></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script language='javascript' src='static/stats.js'></script>
+  </head>
+  <body>
+
+  <div id="sensors">
+    <label > Temperature <input class='sensor' type="checkbox" id="temperature" checked="checked" /></label>
+    <label > Light <input class='sensor' type="checkbox" id="light" checked="checked" /></label>
+    <label > Humidity <input class='sensor' type="checkbox" id="humidity" checked="checked" /></label>
+  </div>
+    <div id="chart_div" style="width:100%; height: 500px;"></div>
+    <div id="graphController">
+      <label> Max</label>
+      <input type="number" id="max" min="0" max="20000" value="20000"/>
+      <button id="refresh">Refresh</button>
+    </div>
+
+  </body>
+
+</html>
